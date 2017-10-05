@@ -46,15 +46,13 @@ class Gobang {
 
     //将对应坐标位置设置为“●”或“○”
     public void setBoard(int x,int y,int flag) {
-        if (isHad(x - 1,y - 1) && flag == 1) {
+        if (isHad(x - 1, y - 1) && flag == 1) {
             board[x - 1][y - 1] = "●";
         }
-        else if (isHad(x,y) && flag == 0) {
+        if (isHad(x, y) && flag == 0) {
             board[x][y] = "○";
         }
-        else {
-            System.out.println("对不起，您已经在此坐标下过棋");
-        }
+
     }
 
     //在控制台输出棋盘
@@ -66,11 +64,13 @@ class Gobang {
             }
             System.out.print("\n");
         }
+        System.out.println("\n");
     }
 
     //判断棋盘上有没有在此位置下过棋
     public boolean isHad(int x,int y) {
         if (board[x][y] != "┼") {
+            System.out.println("对不起，您已经在此坐标下过棋");
             return false;
         }
         else {
@@ -144,17 +144,24 @@ class Gobang {
 }
 public class Main {
     public static void main(String[] args) {
+        int x,y;
         Gobang gobang = new Gobang();
         gobang.initBoard();
         gobang.printBoard();
+        AI ai = new AI();
         Scanner scanner = new Scanner(System.in);
         System.out.println("设置先行 1：玩家先行 2：电脑先行");
         int flag = scanner.nextInt();
+        if (flag == 2) {
+            x = ai.chatX();
+            y = ai.chatY();
+            gobang.setBoard(x,y,flag);
+            gobang.printBoard();
+            flag = 1;
+        }
         String inputStr = null;
         String tem [];
-        int x,y;
         System.out.println("请输入你下棋的位置，使用逗号隔开，eg：1,1");
-        AI ai = new AI();
         while (true) {
             if (flag == 1) {
                 inputStr = scanner.next();
