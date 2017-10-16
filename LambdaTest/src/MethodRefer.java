@@ -20,5 +20,8 @@ public class MethodRefer {
         //同样可以使用Lmbda表达式引用特定对象的实例方法表示
         Converter con3 = "fkit.org"::indexOf;
         System.out.println(con3.convert("it"));
+
+
+
     }
 }
