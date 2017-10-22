@@ -9,7 +9,7 @@ public class MyFrame extends JFrame {
     private JTextField txtResult;
     private JButton btnZero, btnOne, btnTwo, btnThree, btnFour, btnFive,
             btnSix, btnSeven, btnEight, btnNine, btnPlus, btnMinus, btnTimes,
-            btnDivided, btnEqual, btnPoint, btnC, btnCE, btnRightKh, btnLeftKh;
+            btnDivided, btnEqual, btnPoint, btnC, btQuyu, btnRightKh, btnLeftKh;
 
 
     StringBuffer str;
@@ -25,7 +25,7 @@ public class MyFrame extends JFrame {
         this.add(panel);
 
         txtResult = new JTextField("0");
-        txtResult.setFont(new Font("宋体",Font.BOLD,20));
+        txtResult.setFont(new Font("宋体",Font.BOLD,30));
         Color BackColor = new Color(255, 255, 255);
         Color ForeColor = new Color(0, 0, 0);
         txtResult.setBackground(BackColor);
@@ -53,15 +53,17 @@ public class MyFrame extends JFrame {
             addOp("(");
             txtResult.setText(mInput);
         });
-        btnCE = new JButton("CE");
-        panel_1.add(btnCE);
-        btnCE.addActionListener(e -> {
-            txtResult.setText("");
+        btQuyu = new JButton("%");
+        panel_1.add(btQuyu);
+        btQuyu.addActionListener(e ->{
+            addOp("%");
+            txtResult.setText(mInput);
         });
         btnC = new JButton("C");
         panel_1.add(btnC);
         btnC.addActionListener(e -> {
-            txtResult.setText("");
+            mInput = "";
+            txtResult.setText(mInput);
         });
 
         JPanel panel_2 = new JPanel(new GridLayout(1, 4));

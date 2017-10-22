@@ -134,7 +134,7 @@ public class Calculator {
                         stack.push(String.valueOf(op1.multiply(op2)));
                         break;
                     case "/" :
-                        stack.push(String.valueOf(op1.divide(op2,6,BigDecimal.ROUND_DOWN)));
+                        stack.push(String.valueOf(op1.divide(op2,10,BigDecimal.ROUND_DOWN)));
                         break;
                     case "%" :
                         ans = op1.divideAndRemainder(op2);
