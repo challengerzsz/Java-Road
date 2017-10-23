@@ -1,4 +1,6 @@
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.util.Stack;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -39,18 +41,18 @@ public class MyFrame extends JFrame {
         JPanel panel_1 = new JPanel(new GridLayout(1, 4));
         panel.add(panel_1);
 
-        btnRightKh = new JButton(")");
+        btnRightKh = new JButton("(");
 
         panel_1.add(btnRightKh);
         btnRightKh.addActionListener(e ->
         {
-            addOp(")");
+            addOp("(");
             txtResult.setText(mInput);
-        });//在这里加有效性判断 要是无效就不加符号到mInput
-        btnLeftKh = new JButton("(");
+        });
+        btnLeftKh = new JButton(")");
         panel_1.add(btnLeftKh);
         btnLeftKh.addActionListener(e ->{
-            addOp("(");
+            addOp(")");
             txtResult.setText(mInput);
         });
         btQuyu = new JButton("%");
@@ -168,12 +170,26 @@ public class MyFrame extends JFrame {
         });
         btnEqual = new JButton("=");
         panel_5.add(btnEqual);
-        btnEqual.addActionListener(e -> {
+        btnEqual.addActionListener((ActionEvent e) -> {
             System.out.println(mInput);
             Calculator calculator = new Calculator();
             String expression = calculator.changeMidToAfter(mInput);
-            System.out.println(calculator.expressionCalculating(expression));
-            txtResult.setText(String.valueOf(calculator.expressionCalculating(expression)));
+            if (!expression.equals("")) {
+                    if (hasOp(mInput)) {
+                        System.out.println(calculator.expressionCalculating(expression));
+                        txtResult.setText(String.valueOf(calculator.expressionCalculating(expression)));
+                        mInput = "";
+                    }
+                    else {
+                        txtResult.setText("无操作数！");
+                        mInput = "";
+                    }
+            }
+            else {
+                txtResult.setText("括号不匹配！");
+                mInput = "";
+            }
+
         });
         btnPlus = new JButton("+");
         panel_5.add(btnPlus);
@@ -195,4 +211,16 @@ public class MyFrame extends JFrame {
     }
 
 
+    private boolean hasOp(String str) {
+        int opindex = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) >= '0' && str.charAt(i) <= '9') {
+                opindex++;
+            }
+        }
+        if (opindex == 0) {
+            return false;
+        }
+        return true;
+    }
 }

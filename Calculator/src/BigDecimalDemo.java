@@ -28,5 +28,7 @@ public class BigDecimalDemo {
         System.out.println("divide:" + bd7.divide(bd8));
         System.out.println("divide:" + bd7.divide(bd8, 3, BigDecimal.ROUND_HALF_UP));
 
+
+        System.out.println(new BigDecimal("-9").subtract(new BigDecimal("-9")));
     }
 }
