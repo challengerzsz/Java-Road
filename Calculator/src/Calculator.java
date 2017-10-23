@@ -27,9 +27,8 @@ public class Calculator {
     private boolean isMatched(String str) {
         Stack<Character> stack = new Stack();
         for (int i = 0; i < str.length(); i++) {
-            if (str.charAt(i) >= '0' && str.charAt(i) <= '9' || str.charAt(i) == '+' || str.charAt(i) == '-' ||str.charAt(i) == '*'
-            || str.charAt(i) == '/') {
-                i++;
+            if ((str.charAt(i) >= '0' && str.charAt(i) <= '9') || str.charAt(i) == '+' || str.charAt(i) == '-' ||str.charAt(i) == '*'
+            || str.charAt(i) == '/' || str.charAt(i) == '%'){
                 continue;
             }
             if (str.charAt(i) == '(') {
@@ -56,7 +55,7 @@ public class Calculator {
 
 
     public String changeMidToAfter(String expression) {
-
+        System.out.println("待转化的中缀表达式:" + expression);
         if (isMatched(expression)) {
             List<Character> newExpression = new ArrayList();
             Stack<Character> stack = new Stack();
@@ -135,7 +134,7 @@ public class Calculator {
             for (int i = 0; i < newExpression.size(); i++) {
                 newExpression1 = newExpression1 + newExpression.get(i) + "";
             }
-            System.out.println(newExpression1);
+            System.out.println("转换好的中缀表达式:" + newExpression1);
             return newExpression1;
         }
 
@@ -153,7 +152,7 @@ public class Calculator {
     4 public BigDecimal divide(BigDecimal value);                     //除法
  */
     public String expressionCalculating(String expression) {
-        String tmp = null;
+        String tmp;
         if (hasOp(expression)) {
             Stack<String> stack = new Stack();
             String tmp1 = null, tmp2 = null;
