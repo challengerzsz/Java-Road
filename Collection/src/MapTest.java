@@ -1,5 +1,7 @@
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class MapTest {
     public static void main(String[] args) {
@@ -40,7 +42,20 @@ public class MapTest {
         /*
         使用原value与传入参数计算出来的结果覆盖原有的value
          */
-        map.merge("测试2", 1000, (oldKey, oldValue) -> (Integer)oldKey + (Integer)oldValue);
+        map.merge("测试2", 1000, (oldKey, oldValue) -> (Integer) oldKey + (Integer) oldValue);
         System.out.println(map);
+
+        Map map1 = new HashMap();
+        map1.put("测试1", "测试value值");
+        System.out.println(map1);
+
+        HashMap map3 = new HashMap();
+        map3.put(null, null);
+        map3.put(null, null); //1
+        //将一个value为null的key-value对放入HashMap中
+        map3.put("a", null);
+        System.out.println(map3);
+        //输出结果为{null=null, a=null}，1语句并没有放入
+        //因为已经存在一个key为null且value为null的值
     }
 }
