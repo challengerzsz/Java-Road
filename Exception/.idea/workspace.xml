@@ -24,12 +24,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThrowTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ThrowTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ThrowTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+            <state relative-caret-position="264">
+              <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AuctionTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AuctionTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="389">
+              <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+              <folding>
+                <element signature="e#146#147#0" expanded="true" />
+                <element signature="e#172#173#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,6 +71,7 @@
         <option value="$PROJECT_DIR$/src/AutoCloseTest.java" />
         <option value="$PROJECT_DIR$/src/OverrideThrows.java" />
         <option value="$PROJECT_DIR$/src/ThrowTest.java" />
+        <option value="$PROJECT_DIR$/src/AuctionTest.java" />
       </list>
     </option>
   </component>
@@ -100,6 +114,26 @@
               <item name="Exception" type="b2602c69:ProjectViewProjectNode" />
               <item name="Exception" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="AuctionTest.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="Exception" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exception" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="AuctionTest.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <item name="AuctionException" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="Exception" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exception" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="AuctionTest.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+              <item name="AuctionTest" type="1a9f42e2:ClassTreeNode" />
+            </path>
+            <path>
+              <item name="Exception" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Exception" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="OverrideThrows.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
@@ -129,10 +163,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ThrowTest">
+  <component name="RunManager" selected="Application.AuctionTest">
     <configuration name="AccessExceptionMsg" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="AccessExceptionMsg" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Exception" />
+      <envs />
+    </configuration>
+    <configuration name="AuctionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="AuctionTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -161,20 +209,6 @@
     <configuration name="FinallyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="FinallyTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Exception" />
-      <envs />
-    </configuration>
-    <configuration name="MultiExceptionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="MultiExceptionTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -282,19 +316,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.MultiExceptionTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.AccessExceptionMsg" />
-      <item index="2" class="java.lang.String" itemvalue="Application.FinallyTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.AutoCloseTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ThrowTest" />
+      <item index="0" class="java.lang.String" itemvalue="Application.AccessExceptionMsg" />
+      <item index="1" class="java.lang.String" itemvalue="Application.FinallyTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.AutoCloseTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ThrowTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.AuctionTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ThrowTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.AutoCloseTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.FinallyTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.AccessExceptionMsg" />
-        <item index="4" class="java.lang.String" itemvalue="Application.MultiExceptionTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.AuctionTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ThrowTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.AutoCloseTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.FinallyTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.AccessExceptionMsg" />
       </list>
     </recent_temporary>
   </component>
@@ -418,9 +452,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ThrowTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+        <state relative-caret-position="264">
+          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AuctionTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+          <folding>
+            <element signature="e#146#147#0" expanded="true" />
+            <element signature="e#172#173#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
