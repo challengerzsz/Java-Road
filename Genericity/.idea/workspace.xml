@@ -36,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InferenceTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="InferenceTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/InferenceTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
@@ -49,6 +49,23 @@
                 <element signature="e#188#189#0" expanded="true" />
                 <element signature="e#215#216#0" expanded="true" />
                 <element signature="e#447#455#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ErasureTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ErasureTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+              <folding>
+                <element signature="e#88#89#0" expanded="true" />
+                <element signature="e#120#121#0" expanded="true" />
+                <element signature="e#146#147#0" expanded="true" />
+                <element signature="e#173#174#0" expanded="true" />
+                <element signature="e#208#209#0" expanded="true" />
+                <element signature="e#240#241#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -79,10 +96,11 @@
         <option value="$PROJECT_DIR$/src/MyUtils.java" />
         <option value="$PROJECT_DIR$/src/TreeSetTest.java" />
         <option value="$PROJECT_DIR$/src/InferenceTest.java" />
+        <option value="$PROJECT_DIR$/src/ErasureTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
@@ -157,10 +175,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.InferenceTest">
-    <configuration name="Apple" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.ErasureTest">
+    <configuration name="ErasureTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Apple" />
+      <option name="MAIN_CLASS_NAME" value="ErasureTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -310,19 +328,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.Apple" />
-      <item index="1" class="java.lang.String" itemvalue="Application.MethodTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.MyUtils" />
-      <item index="3" class="java.lang.String" itemvalue="Application.TreeSetTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.InferenceTest" />
+      <item index="0" class="java.lang.String" itemvalue="Application.MethodTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.MyUtils" />
+      <item index="2" class="java.lang.String" itemvalue="Application.TreeSetTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.InferenceTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.ErasureTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.InferenceTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TreeSetTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.MyUtils" />
-        <item index="3" class="java.lang.String" itemvalue="Application.MethodTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.Apple" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ErasureTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.InferenceTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TreeSetTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.MyUtils" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MethodTest" />
       </list>
     </recent_temporary>
   </component>
@@ -343,7 +361,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="7" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -487,6 +505,21 @@
             <element signature="e#188#189#0" expanded="true" />
             <element signature="e#215#216#0" expanded="true" />
             <element signature="e#447#455#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ErasureTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="19" column="32" lean-forward="true" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <element signature="e#88#89#0" expanded="true" />
+            <element signature="e#120#121#0" expanded="true" />
+            <element signature="e#146#147#0" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
+            <element signature="e#240#241#0" expanded="true" />
           </folding>
         </state>
       </provider>
