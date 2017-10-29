@@ -12,14 +12,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="OverrideThrows.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OverrideThrows.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/OverrideThrows.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+            <state relative-caret-position="384">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ThrowTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ThrowTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -47,6 +57,7 @@
         <option value="$PROJECT_DIR$/src/FinallyTest.java" />
         <option value="$PROJECT_DIR$/src/AutoCloseTest.java" />
         <option value="$PROJECT_DIR$/src/OverrideThrows.java" />
+        <option value="$PROJECT_DIR$/src/ThrowTest.java" />
       </list>
     </option>
   </component>
@@ -118,7 +129,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AutoCloseTest">
+  <component name="RunManager" selected="Application.ThrowTest">
     <configuration name="AccessExceptionMsg" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="AccessExceptionMsg" />
@@ -147,20 +158,6 @@
       <module name="Exception" />
       <envs />
     </configuration>
-    <configuration name="DivTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="DivTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="Exception" />
-      <envs />
-    </configuration>
     <configuration name="FinallyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="FinallyTest" />
@@ -178,6 +175,20 @@
     <configuration name="MultiExceptionTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="MultiExceptionTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Exception" />
+      <envs />
+    </configuration>
+    <configuration name="ThrowTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="ThrowTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -271,19 +282,19 @@
       <listeners />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.DivTest" />
-      <item index="1" class="java.lang.String" itemvalue="Application.MultiExceptionTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.AccessExceptionMsg" />
-      <item index="3" class="java.lang.String" itemvalue="Application.FinallyTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.AutoCloseTest" />
+      <item index="0" class="java.lang.String" itemvalue="Application.MultiExceptionTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.AccessExceptionMsg" />
+      <item index="2" class="java.lang.String" itemvalue="Application.FinallyTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.AutoCloseTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.ThrowTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.AutoCloseTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.FinallyTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.AccessExceptionMsg" />
-        <item index="3" class="java.lang.String" itemvalue="Application.MultiExceptionTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.DivTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ThrowTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.AutoCloseTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.FinallyTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.AccessExceptionMsg" />
+        <item index="4" class="java.lang.String" itemvalue="Application.MultiExceptionTest" />
       </list>
     </recent_temporary>
   </component>
@@ -397,11 +408,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/OverrideThrows.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="7" lean-forward="false" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
+        <state relative-caret-position="384">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ThrowTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
