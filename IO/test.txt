@@ -1,0 +1,2 @@
+普通字符串
+PrintStreamTest@1540e19d
