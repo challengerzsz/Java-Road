@@ -19,7 +19,7 @@ public class BufferTest {
         //取出第一个元素
         System.out.println("第一个元素(position = 0):" + buff.get());
         System.out.println("取出一个元素后，position = " + buff.position());
-        //调用clear方法，为下次向buff里装入数据做准备
+        //调用clear方法，为下次向buff里装入数据做准备·
         buff.clear();
         System.out.println("执行clear()后，limit = " + buff.limit());
         System.out.println("执行clear()后，position = " + buff.position());
