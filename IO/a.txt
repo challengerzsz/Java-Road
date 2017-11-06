@@ -1,5 +1,3 @@
-import com.sun.org.apache.xpath.internal.SourceTree;
-
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -18,6 +16,7 @@ public class FileChannelTest {
              //以文件输出流建立FileChannel，用以控制输出
              FileChannel outChannel = new FileOutputStream("a.txt").getChannel()){
             //将FileChannel里的全部数据映射成ByteBuffer
+            //MappedByteBuffer表示Channel将磁盘文件的部分或全部内容映射到内存中后得到的结果
             MappedByteBuffer buffer = inChannel.map(FileChannel.MapMode.READ_ONLY, 0, f.length());
             //使用GBK字符集创建解码器
             Charset charset = Charset.forName("utf-8");
