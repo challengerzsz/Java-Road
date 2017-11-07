@@ -2,29 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a27e1f2-2ec5-4f1f-8898-7eb7f201e513" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CharsetTransform.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Calculator/out/production/Calculator/MyFrame.class" afterPath="$PROJECT_DIR$/../Calculator/out/production/Calculator/MyFrame.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Collection/out/production/Collection/TreeMapTest.class" afterPath="$PROJECT_DIR$/../Collection/out/production/Collection/TreeMapTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Gobang/out/production/Gobang/AI.class" afterPath="$PROJECT_DIR$/../Gobang/out/production/Gobang/AI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Gobang/out/production/Gobang/Gobang.class" afterPath="$PROJECT_DIR$/../Gobang/out/production/Gobang/Gobang.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Gobang/out/production/Gobang/Main.class" afterPath="$PROJECT_DIR$/../Gobang/out/production/Gobang/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AbstractClassTest/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../AbstractClassTest/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../AbstractClassTest/src/Circle.java" afterPath="$PROJECT_DIR$/../AbstractClassTest/src/Circle.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Calculator/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Calculator/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Calculator/src/Main.java" afterPath="$PROJECT_DIR$/../Calculator/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Calculator/src/MyFrame.java" afterPath="$PROJECT_DIR$/../Calculator/src/MyFrame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Collection/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Collection/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Collection/src/TreeMapTest.java" afterPath="$PROJECT_DIR$/../Collection/src/TreeMapTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CopyDirectory/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../CopyDirectory/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../CopyDirectory/src/CopyDirectory.java" afterPath="$PROJECT_DIR$/../CopyDirectory/src/CopyDirectory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Exception/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Exception/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Genericity/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Genericity/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Gobang/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Gobang/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Gobang/src/Main.java" afterPath="$PROJECT_DIR$/../Gobang/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../InnerClassTest/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../InnerClassTest/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../InterfaceTest/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../InterfaceTest/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../LambdaTest/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../LambdaTest/.idea/workspace.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -63,8 +41,8 @@
       <file leaf-file-name="PathTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/PathTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state relative-caret-position="456">
+              <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -359,6 +337,14 @@
       <option name="presentableId" value="Default" />
       <updated>1509367506618</updated>
     </task>
+    <task id="LOCAL-00001" summary="Path测试">
+      <created>1510038091378</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1510038091378</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -395,6 +381,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Path测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="Path测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -836,8 +826,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PathTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="8" lean-forward="false" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        <state relative-caret-position="456">
+          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
