@@ -31,6 +31,9 @@ class X implements Comparable {
     }
 }
 
+class Test {
+    private int a = 1;
+}
 public class TreeMapTest {
     public static void main(String[] args) {
         TreeMap tm = new TreeMap();
@@ -50,5 +53,6 @@ public class TreeMapTest {
         System.out.println(tm.lowerKey(new X(2)));
         //返回TreeMap的子TreeMap
         System.out.println(tm.subMap(new X(-1), new X(4)));
+
     }
 }

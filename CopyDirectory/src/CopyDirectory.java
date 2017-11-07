@@ -34,7 +34,6 @@ public class CopyDirectory {
     public static void main(String[] args) throws IOException {
         String oldFilePath = "E:\\Java-Road\\IO";
         String newFilePath = "C:\\Users\\66490\\Desktop\\newIO";
-        new Copy().copyAll(oldFilePath,newFilePath);
-
+        new Copy().copyAll(oldFilePath, newFilePath);
     }
 }

@@ -6,6 +6,7 @@ import java.util.Scanner;
 class AI {
     public int x;
     public int y;
+
     Random rd = new Random();
     public int chatX() {
         x = rd.nextInt(15);
@@ -173,6 +174,7 @@ public class Main {
                 flag = 0;
                 if (gobang.isWin(x,y)) {
                     System.out.println("你赢了！");
+                    scanner.close();
                     return;
                 }
                 continue;
@@ -185,6 +187,7 @@ public class Main {
                 flag = 1;
                 if (gobang.isWin(x,y)) {
                     System.out.println("电脑赢了！");
+                    scanner.close();
                     return;
                 }
                 continue;
