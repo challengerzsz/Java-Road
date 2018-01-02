@@ -7,6 +7,9 @@ import java.util.Date;
 public class DateUtil {
     private static SimpleDateFormat mSimpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
+    public static Date parseString(String timing) throws ParseException {
+        return mSimpleDateFormat.parse(timing);
+    }
     /**
      *
      * @param date

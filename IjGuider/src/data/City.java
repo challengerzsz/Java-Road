@@ -1,6 +1,7 @@
 package data;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class City implements java.io.Serializable {
@@ -16,15 +17,55 @@ public class City implements java.io.Serializable {
         return cityName;
     }
 
+    public void setCityName(String cityName) {
+        this.cityName = cityName;
+    }
+
+    public List<Train> getTrainNumber() {
+        return trainNumber;
+    }
+
     /**
-     *增加列车、飞机
-     * @return 成功：true 失败false
+     *
+     * @param trainNumber 从text获取到的列车号
+     * @param departureTime 从text获取到的始发时间
+     * @param wayCity 从text获取的途经城市数组
+     * @param wayStationTime 从text获取的途经城市到达的时间数组
+     * @param pay 途经城市的价格
+     * @return
      */
-    public boolean addTrain() {
+    public boolean addTrain(String trainNumber, Date departureTime, City[] wayCity,
+                            Date[] wayStationTime, Integer[] pay) {
+        for (Train tmp : this.trainNumber) {
+            if (tmp.getTrainNumber().equals(trainNumber)) return false;
+        }
+        Train newTrain = new Train(trainNumber, this, departureTime);
+        for (int i = 0; i < wayCity.length; i++) {
+            newTrain.addTrainInformation(i, wayCity[i], wayStationTime[i], pay[i]);
+        }
+        this.trainNumber.add(newTrain);
         return true;
     }
-    public boolean addPlane() {
-//        Plane plane = new Plane("宝鸡", this, "2018-01-01 13:00:00");
+
+    /**
+     *
+     * @param planeNumber 从text获取到的航班号
+     * @param departureTime 从text获取到的始发时间
+     * @param wayCity 从text获取的途经城市数组
+     * @param wayStationTime 从text获取的途经城市到达的事件数组
+     * @param pay 途经城市的价格
+     * @return
+     */
+    public boolean addPlane(String planeNumber, Date departureTime, City[] wayCity,
+                            Date[] wayStationTime, Integer[] pay) {
+        for (Plane tmp : this.planeNumber) {
+            if (tmp.getDepartureTime().equals(planeNumber)) return false;
+        }
+        Plane newPlane = new Plane(planeNumber, this, departureTime);
+        for (int i = 0; i < wayCity.length; i++) {
+            newPlane.addPlaneInformation(i, wayCity[i], wayStationTime[i], pay[i]);
+        }
+        this.planeNumber.add(newPlane);
         return true;
     }
 
@@ -50,4 +91,11 @@ public class City implements java.io.Serializable {
         return null;
     }
 
+    @Override
+    public int hashCode() {
+        return Integer.parseInt(cityName);
+    }
+
+//    public static void main(String[] args) {
+//    }
 }
