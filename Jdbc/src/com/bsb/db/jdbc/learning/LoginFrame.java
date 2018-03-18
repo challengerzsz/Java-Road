@@ -50,14 +50,16 @@ public class LoginFrame {
     }
 
     public boolean validate(String userName, String userPwd) {
-        SQL = "select * from login_info where username = '" + userName + "'and password = '" + userPwd + "'";
+        SQL = "select * from login_info where username = ? and password = ?";
         System.out.println(SQL);
 
         try (
                 Connection connection = DriverManager.getConnection(url, user, pwd);
-                Statement statement = connection.createStatement();
-                ResultSet resultSet = statement.executeQuery(SQL)
+                PreparedStatement preparedStatement = connection.prepareStatement(SQL)
                 ){
+            preparedStatement.setString(1, userName);
+            preparedStatement.setString(2, userPwd);
+            ResultSet resultSet = preparedStatement.executeQuery();
             if (resultSet.next()) {
                 return true;
             }
