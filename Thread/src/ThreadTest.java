@@ -1,8 +1,8 @@
 public class ThreadTest {
-    public volatile int number = 0;
+    public int number = 0;
 
 
-    public void increase() {
+    public synchronized void increase() {
         number++;
     }
 
