@@ -5,12 +5,21 @@ public class ThreadTest {
     public synchronized void increase() {
         number++;
     }
+    
+}
+
+class Test {
 
     public static void main(String[] args) {
         final ThreadTest test = new ThreadTest();
+
         for (int i = 0; i < 10; i++) {
             new Thread(() -> {
-                for (int j = 0; j < 1000; j++) test.increase();
+                for (int j = 0; j < 1000; j++) {
+                    test.increase();
+                    System.out.println(Thread.currentThread().getName());
+                }
+
             }).start();
         }
         //此方法返回活动线程的当前线程的线程组中的数量
@@ -20,6 +29,4 @@ public class ThreadTest {
 
         System.out.println(test.number);
     }
-
-    
 }
