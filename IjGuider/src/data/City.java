@@ -1,5 +1,6 @@
 package data;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +12,7 @@ public class City implements java.io.Serializable {
     public City(String cityName) {
         this.cityName = cityName;
     }
+
 
     public String getCityName() {
         return cityName;
@@ -35,5 +37,4 @@ public class City implements java.io.Serializable {
     public void setPlaneList(List<Plane> planeList) {
         this.planeList = planeList;
     }
-
 }

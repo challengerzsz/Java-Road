@@ -20,16 +20,6 @@ public class DateUtil {
     }
 
     /**
-     * 计算出发时间和结束时间的间隔（毫秒）权值
-     * @param departureTime
-     * @param arrivalTime
-     * @return 间隔时间（long）
-     */
-    public static long parseLongTimeConsuming(Date departureTime, Date arrivalTime) {
-        return 0;
-    }
-
-    /**
      * 计算出发时间和结束时间的间隔
      * @param departureTime
      * @param arrivalTime
@@ -67,12 +57,12 @@ public class DateUtil {
         return timeStr;
     }
 
-    public static void main(String[] args) throws ParseException {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-//        Calendar calendar = new (simpleDateFormat.format("2017-1-1"));
-        Date date = simpleDateFormat.parse("2018-1-1 14:00:00");
-        Date date1 = simpleDateFormat.parse("2018-1-2 14:01:56");
-
-        System.out.println(timeConsuming(date, date1));
-    }
+//    public static void main(String[] args) throws ParseException {
+//        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+////        Calendar calendar = new (simpleDateFormat.format("2017-1-1"));
+//        Date date = simpleDateFormat.parse("2018-1-1 14:00:00");
+//        Date date1 = simpleDateFormat.parse("2018-1-2 14:01:56");
+//
+//        System.out.println(timeConsuming(date, date1));
+//    }
 }

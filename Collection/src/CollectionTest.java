@@ -43,5 +43,8 @@ public class CollectionTest {
         //控制books集合里只剩下col集合中也包含的元素
         books.retainAll(col);
         System.out.println("books集合中的元素为：" + books);
+
+
+        Collection collection = new ArrayList();
     }
 }

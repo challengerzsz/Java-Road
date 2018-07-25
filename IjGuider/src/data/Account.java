@@ -1,8 +1,8 @@
 package data;
 
 
-public class Account {
-    private int type;
+public class Account implements java.io.Serializable{
+    private int type;//1：管理员 2：用户
     private String accountName;
     private String password;
 
@@ -41,7 +41,4 @@ public class Account {
         this.password = password;
         this.type = type;
     }
-
-
-
 }

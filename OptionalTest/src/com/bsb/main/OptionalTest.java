@@ -3,6 +3,8 @@ package com.bsb.main;
 import com.bsb.pojo.User;
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
 
@@ -26,6 +28,8 @@ public class OptionalTest {
 //        若对象可能是null或非null则应该使用ofNullable方法
         Optional<User> opt = Optional.ofNullable(user);
     }
+
+
 
     @Test
     public void whenCreateOfNullableOptional_thenOk() {
@@ -95,4 +99,5 @@ public class OptionalTest {
 
         assertEquals(id, user.getId());
     }
+
 }

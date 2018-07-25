@@ -1,5 +1,6 @@
 package data;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -10,7 +11,7 @@ public class Plane implements java.io.Serializable {
     private Date departureTime;
     private City finalStation;
     private Date finalArrivalTime;
-    private Map<City,Integer> wayStation = new HashMap<>();
+    private ArrayList<City> wayStation = new ArrayList<>();
     private Map<City,Date> wayStationTime = new HashMap<>();
     private Map<City,Double> wayStationPay = new HashMap<>();
 
@@ -32,7 +33,7 @@ public class Plane implements java.io.Serializable {
         this.finalArrivalTime = wayStationTime[wayStationTime.length - 1];
 
         for (int i = 0; i < wayStation.length; i++) {
-            this.wayStation.put(wayStation[i], i);
+            this.wayStation.add(wayStation[i]);
             this.wayStationTime.put(wayStation[i], wayStationTime[i]);
             this.wayStationPay.put(wayStation[i], pay[i]);
         }
@@ -79,11 +80,11 @@ public class Plane implements java.io.Serializable {
         this.finalArrivalTime = finalArrivalTime;
     }
 
-    public Map<City, Integer> getWayStation() {
+    public ArrayList<City> getWayStation() {
         return wayStation;
     }
 
-    public void setWayStation(Map<City, Integer> wayStation) {
+    public void setWayStation(ArrayList<City> wayStation) {
         this.wayStation = wayStation;
     }
 

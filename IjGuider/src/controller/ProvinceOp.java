@@ -1,8 +1,12 @@
 package controller;
 
 import data.City;
+import data.Plane;
 import data.Province;
+import data.Train;
+import jdk.management.resource.internal.inst.FileOutputStreamRMHooks;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 
 public class ProvinceOp {
@@ -113,4 +117,59 @@ public class ProvinceOp {
         }
         return null;
     }
+
+    /**
+     * 获取省份数组
+     * @return
+     */
+    public static String[] getProvince() {
+        String[] provinces = new String[totalProvince.size()];
+        int i = 0;
+        for (Province provinceTmp : totalProvince) {
+            provinces[i] = String.valueOf(provinceTmp.getProvinceName());
+            i++;
+        }
+        return provinces;
+    }
+
+    public static City[] getCities(String provinceName) {
+        City[] cities = new City[getProvince(provinceName).getCity().size()];
+        int i = 0;
+        for (Province provinceTmp : totalProvince) {
+            if (provinceTmp.getProvinceName().equals(provinceName)) {
+                for (City cityTmp : provinceTmp.getCity()) {
+                    cities[i] = cityTmp;
+                    i++;
+                }
+            }
+        }
+        return cities;
+    }
+//    public static HashSet<City> getAllWayStation(String province, String cityName) {
+//        City currentCity = ProvinceOp.getCity(province, cityName);
+//        HashSet<City> allWayStation = new HashSet<>();
+//        for (Train trainTmp : currentCity.getTrainList()) {
+//            for (City cityTmp : trainTmp.getWayStation()) {
+//                allWayStation.add(cityTmp);
+//            }
+//        }
+//
+//        for (Plane planeTmp : currentCity.getPlaneList()) {
+//            for (City cityTmp : planeTmp.getWayStation()) {
+//                allWayStation.add(cityTmp);
+//            }
+//        }
+//    }
+//    /**
+//     * 更新对应城市交通工具列集合
+//     * @param provinceName 省份名
+//     * @param cityName 城市名
+//     */
+//    public static void refreshCityVehicleList(String provinceName, String cityName) {
+//        City targetCity = ProvinceOp.getCity(provinceName, cityName);
+//        targetCity.setPlaneList();
+//        targetCity.setTrainList();
+//    }
+
+
 }

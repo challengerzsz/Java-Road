@@ -1,16 +1,18 @@
 package data;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Train implements java.io.Serializable {
+
     private String trainNumber;
     private City departureCity;
     private Date departureTime;
     private City finalStation;
     private Date finalArrivalTime;
-    private Map<City,Integer> wayStation = new HashMap<>();
+    private ArrayList<City> wayStation = new ArrayList<>();
     private Map<City,Date> wayStationTime = new HashMap<>();
     private Map<City,Double> wayStationPay = new HashMap<>();
 
@@ -25,18 +27,17 @@ public class Train implements java.io.Serializable {
      */
     public Train(String trainNumber, City departureCity, Date departureTime, City[] wayStation,
                  Date[] wayStationTime, Double[] pay) {
-            this.trainNumber = trainNumber;
+        this.trainNumber = trainNumber;
         this.departureCity = departureCity;
         this.departureTime = departureTime;
         this.finalStation = wayStation[wayStation.length - 1];
         this.finalArrivalTime = wayStationTime[wayStationTime.length - 1];
 
         for (int i = 0; i < wayStation.length; i++) {
-            this.wayStation.put(wayStation[i], i);
+            this.wayStation.add(wayStation[i]);
             this.wayStationTime.put(wayStation[i], wayStationTime[i]);
             this.wayStationPay.put(wayStation[i], pay[i]);
         }
-
     }
 
     public String getTrainNumber() {
@@ -79,11 +80,11 @@ public class Train implements java.io.Serializable {
         this.finalArrivalTime = finalArrivalTime;
     }
 
-    public Map<City, Integer> getWayStation() {
+    public ArrayList<City> getWayStation() {
         return wayStation;
     }
 
-    public void setWayStation(Map<City, Integer> wayStation) {
+    public void setWayStation(ArrayList<City> wayStation) {
         this.wayStation = wayStation;
     }
 
