@@ -7,7 +7,7 @@ import java.util.List;
  * @Date: 2018/8/18 15:04
  */
 public class Map<K,V> {
-    
+
     private int size;
     private Node node;
 
