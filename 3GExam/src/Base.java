@@ -1,11 +1,12 @@
 /**
- * 类加载考点
  * @Author: zeng
- * @Date: 2018/8/18 9:50
+ * @Date: 2018/8/18 21:29
  */
-public class Base
-{
+public class Base {
     private String baseName = "base";
+    static {
+        System.out.println("111");
+    }
     public Base()
     {
         callName();
@@ -19,15 +20,18 @@ public class Base
     static class Sub extends Base
     {
         private String baseName = "sub";
+
+        public Sub() {
+//            System.out.println(baseName);
+        }
+
         public void callName()
         {
             System. out. println (baseName) ;
         }
     }
-    public static void main(String[] args)
-    {
-        Base b = new Sub();
+    public static void main(String[] args) {
+        new Sub().callName();
+        new Sub().callName();
     }
 }
-
-

@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -21,6 +22,17 @@ public class Genericity<T> {
         System.out.println(list.get(0).toString());
     }
 
+    public void test(Collection<? extends AA> collection) {
+        collection.add(new BB());
+        collection.add(new CC());
+    }
+
+    public void test1(Collection<? super BB> collection) {
+        collection.add(new AA());
+        collection.add(new BB());
+        collection.add(new CC());
+    }
+
     public static void main(String[] args) {
 
 //        List<String> strList = new ArrayList<>();
@@ -31,6 +43,10 @@ public class Genericity<T> {
 
 //        print(strList);
 //        print(intList);
+
+        List<BB> aaList = new ArrayList<>();
+        aaList.add(new BB());
+//        test(aaList);
 
         Genericity genericity = new Genericity();
         genericity.setClassType(1);
@@ -59,6 +75,7 @@ public class Genericity<T> {
         List<DD> testDDTest = new ArrayList<>();
         testDDTest.add(son2);
         print(testDDTest);
+
 
 //        List<EE> testEEList = new ArrayList<>();
 //        testEEList.add(other);
@@ -103,6 +120,9 @@ class BB extends AA {
 class CC extends BB {
 
     private String cc;
+
+    public CC() {
+    }
 
     public CC(String cc) {
         this.cc = cc;

@@ -125,7 +125,9 @@ public class Map<K,V> {
                 if (this.keys[hash] != key) {
                     reHash = this.reHash(reHash);
                 }
-                if (this.keys[reHash] == key) return (V) this.values[reHash];
+                if (reHash != -1) {
+                    if (this.keys[reHash] == key) return (V) this.values[reHash];
+                }
             }
             return null;
         }
@@ -134,10 +136,14 @@ public class Map<K,V> {
     public static void main(String[] args) {
         Map<String, String> map = new Map<>();
 
+        for (int i = 0; i < 10; i++) {
+            String temp = new String(String.valueOf(i));
+            map.put("1", temp);
+        }
+        String te = new String("123");
+        map.put(te, "1");
 
-        map.put("1", "1");
-
-        System.out.println(map.get("1"));
+        System.out.println(map.get(te));
 
     }
 }
