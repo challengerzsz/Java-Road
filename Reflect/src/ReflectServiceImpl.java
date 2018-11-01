@@ -22,20 +22,23 @@ public class ReflectServiceImpl {
 }
 
 class ReflectServiceImpl2 {
+
     private String name;
+
+    public ReflectServiceImpl2(String name) {
+        this.name = name;
+    }
+
     public void sayHello() {
         System.out.println("hello " + name);
     }
 
-    public ReflectServiceImpl2 getInstance() {
+    public static ReflectServiceImpl2 getInstance() {
         ReflectServiceImpl2 object = null;
         try {
-            object = (ReflectServiceImpl2) Class.forName("ReflectServiceImpl2").newInstance();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
+            object = (ReflectServiceImpl2) Class.forName("ReflectServiceImpl2").getConstructor(String.class)
+                    .newInstance("zsz");
+        } catch (InstantiationException | ClassNotFoundException | NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
             e.printStackTrace();
         }
         return object;
@@ -45,19 +48,17 @@ class ReflectServiceImpl2 {
         ReflectServiceImpl target = new ReflectServiceImpl();
         try {
             Method method = ReflectServiceImpl.class.getMethod("sayHello", String.class);
-            method.invoke(target, "zsz");
-        } catch (NoSuchMethodException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-        } catch (InvocationTargetException e) {
+            returnObj = method.invoke(target, "zsz");
+        } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e) {
             e.printStackTrace();
         }
         return returnObj;
     }
 
     public static void main(String[] args) {
-        ReflectServiceImpl2 reflectServiceImpl2 = new ReflectServiceImpl2();
-        reflectServiceImpl2.reflectMethod();
+//        ReflectServiceImpl2 reflectServiceImpl2 = new ReflectServiceImpl2();
+//        reflectServiceImpl2.reflectMethod();
+        ReflectServiceImpl2 reflectServiceImpl2 = getInstance();
+        reflectServiceImpl2.sayHello();
     }
 }
