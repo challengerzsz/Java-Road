@@ -12,10 +12,8 @@ public class NativeMethod {
 
 
     public static void main(String[] args) {
+
         new NativeMethod().hello();
-
-
-
 //        System.out.println(System.getProperty("java.library.path"));
     }
 
