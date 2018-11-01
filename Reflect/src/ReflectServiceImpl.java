@@ -60,5 +60,9 @@ class ReflectServiceImpl2 {
 //        reflectServiceImpl2.reflectMethod();
         ReflectServiceImpl2 reflectServiceImpl2 = getInstance();
         reflectServiceImpl2.sayHello();
+
+        Class clazz = Integer.TYPE;
+        Class clazzSuper = Integer.class.getSuperclass();
+        System.out.println(clazzSuper.getName());
     }
 }
