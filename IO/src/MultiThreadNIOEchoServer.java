@@ -83,8 +83,8 @@ public class MultiThreadNIOEchoServer {
                     doRead(selectionKey);
                 } else if (selectionKey.isValid() && selectionKey.isWritable()) {
                     doWrite(selectionKey);
-                    before = System.currentTimeMillis();
-                    long after = hashMap.remove(((SocketChannel) selectionKey.channel()).socket());
+                    before = hashMap.remove(((SocketChannel) selectionKey.channel()).socket());
+                    long after = System.currentTimeMillis();
                     System.out.println("spend: " + (after - before) + "ms");
                 }
             }
