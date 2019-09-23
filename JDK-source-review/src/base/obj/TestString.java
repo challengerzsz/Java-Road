@@ -10,6 +10,8 @@ public class TestString {
         String s = new String("hello");
         String ss = new String("hello");
         String str = new String("hell");
+        String str1 = new String("hell11") + "hello22";
+        String str2 = "hello111" + "hello222";
         System.out.println(ss == s);
         String sss = s.intern();
         System.out.println(sss == s);
