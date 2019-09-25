@@ -6,7 +6,10 @@ package base.obj;
  */
 public interface TestInterface {
 
+    // not allowed
+    // private int a = 0;
 
+    // int a;
 
     static void test() {
 
