@@ -30,5 +30,10 @@ public class TestString {
         String ssss2 = ss2.intern();
         System.out.println(ssss2 == sss2);
 
+        String str5 = "zsz";
+        String str6 = new String("z") + new String("sz");
+//        String str6 = "z" + "sz";
+        System.out.println(str5 == str);
+
     }
 }
