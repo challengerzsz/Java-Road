@@ -1,5 +1,6 @@
 import java.io.IOException;
 import java.net.InetSocketAddress;
+import java.nio.Buffer;
 import java.nio.ByteBuffer;
 import java.nio.channels.SelectionKey;
 import java.nio.channels.Selector;
@@ -12,9 +13,7 @@ import java.util.Iterator;
  * @Date: 2019-04-06 20:53
  */
 public class ServerSocketChannelTest {
-
     public static void main(String[] args) throws IOException {
-
         int port = 0;
         int bufSize = 512;
         ServerSocketChannel serverSocketChannel = ServerSocketChannel.open();
@@ -40,6 +39,8 @@ public class ServerSocketChannelTest {
                     channel.register(key.selector(), SelectionKey.OP_READ, ByteBuffer.allocate(bufSize));
                 }
                 if (key.isReadable()) {
+
+                    Buffer buffer = (Buffer) key.attachment();
                     handleRead(key);
                 }
                 if (key.isWritable() && key.isValid()) {

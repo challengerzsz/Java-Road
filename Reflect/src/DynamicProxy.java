@@ -103,4 +103,9 @@ class StuInvocationHandler<T> implements InvocationHandler {
         MonitorUtil.finish(method.getName());
         return result;
     }
+
+    @Override
+    public java.lang.Object invoke(java.lang.Object proxy, Method method, java.lang.Object[] args) throws Throwable {
+        return null;
+    }
 }

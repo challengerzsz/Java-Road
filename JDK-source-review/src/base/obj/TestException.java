@@ -24,7 +24,8 @@ public class TestException {
         } catch (StackOverflowError stackOverflowError) {
 
         } finally {
-            return i++;
+            ++i;
+            return i;
         }
     }
 }
