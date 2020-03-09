@@ -13,7 +13,8 @@ public class TestReentrantLock {
         // 默认创建的RLock是非公平锁
         ReentrantLock reentrantLock = new ReentrantLock();
         Condition condition = reentrantLock.newCondition();
-        reentrantLock.lock();
+//        reentrantLock.lock();
+        reentrantLock.tryLock();
 
         reentrantLock.unlock();
     }
