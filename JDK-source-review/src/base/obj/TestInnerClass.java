@@ -17,7 +17,7 @@ public class TestInnerClass {
     class InnerClass {
 
         // not allowed
-//        static int i = 0;
+//        static int k = 0;
 
         public void test() {
             i++;
