@@ -38,10 +38,15 @@ public class TestString {
 //    }
 
     public static void main(String[] args) {
-        String str1 = new String("123");
-        System.out.println(str1 == str1.intern());
-
-        String str2 = new String("123") + new String("456");
-        System.out.println(str2 == str2.intern());
+//        String str1 = new String("123");
+//        System.out.println(str1 == str1.intern());
+//
+//        String str2 = new String("123") + new String("456");
+//        System.out.println(str2 == str2.intern());
+        String str1 = "123";
+        String temp = str1;
+        System.out.println(str1 == temp);
+        str1 = "456";
+        System.out.println(temp == str1);
     }
 }
